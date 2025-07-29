@@ -1,0 +1,17 @@
+{
+  "name": "gpt-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . ChatGPT --platform=darwin --arch=x64 --icon=icon.icns --overwrite --out=dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Native Electron app for ChatGPT",
+  "dependencies": {
+    "electron": "^37.2.4",
+    "electron-packager": "^17.1.2"
+  }
+}
