@@ -33,7 +33,7 @@ A lightweight Electron wrapper for ChatGPT, tailored for Intel Macs that can’t
    ```
 4. **Move to /Applications:**
    ```bash
-   mv ChatGPT-darwin-x64/ChatGPT.app /Applications
+   mv dist/ChatGPT-darwin-x64/ChatGPT.app /Applications
    ```
 
 ### Project Structure
