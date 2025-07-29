@@ -27,5 +27,5 @@ jobs:
       - name: Upload ChatGPT.app artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ChatGPT-mac-app
+          name: ChatGPT.app
           path: dist/ChatGPT-darwin-x64/ChatGPT.app
