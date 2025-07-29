@@ -23,3 +23,9 @@ jobs:
 
       - name: List build output
         run: ls -lR dist || true
+
+      - name: Upload ChatGPT.app artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ChatGPT-mac-app
+          path: dist/ChatGPT-darwin-x64/ChatGPT.app
