@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: macOS 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,5 +27,5 @@ jobs:
       - name: Upload ChatGPT.app artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ChatGPT.app
-          path: dist/ChatGPT-darwin-x64/ChatGPT.app
+          name: ChatGPT-darwin-x64
+          path: dist/ChatGPT-darwin-x64
