@@ -27,11 +27,14 @@ A lightweight Electron wrapper for ChatGPT, tailored for Intel Macs that can’t
    ```bash
    npm install
    ```
-3. **Build the app:**
+
+3. **Build the app (.app bundle):**
    ```bash
    npm run build
    ```
-4. **Move to /Applications:**
+   The app bundle will be in `dist/ChatGPT-darwin-x64/ChatGPT.app`.
+
+5. **Install manually (optional):**
    ```bash
    mv dist/ChatGPT-darwin-x64/ChatGPT.app /Applications
    ```

@@ -4,14 +4,31 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . ChatGPT --platform=darwin --arch=x64 --icon=icon.icns --overwrite --out=dist"
+    "build": "electron-packager . ChatGPT --platform=darwin --arch=x64 --icon=icon.icns --overwrite --out=dist",
+    "build:mac": "electron-builder --mac --x64"
+  },
+  "build": {
+    "appId": "com.nininunz.gpt-electron",
+    "productName": "ChatGPT",
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "icon.icns"
+    },
+    "files": [
+      "main.js",
+      "package.json",
+      "icon.icns"
+    ]
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "Native Electron app for ChatGPT",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^37.2.4",
-    "electron-packager": "^17.1.2"
+    "electron-packager": "^17.1.2",
+    "electron-builder": "^24.6.0"
   }
 }
