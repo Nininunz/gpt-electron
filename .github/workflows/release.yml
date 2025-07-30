@@ -27,7 +27,7 @@ jobs:
       - name: Upload ChatGPT.app to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/ChatGPT-darwin-x64/ChatGPT.app/**
+          files: dist/ChatGPT-darwin-x64/ChatGPT.app
           tag_name: ${{ github.run_number }}
           name: Release ${{ github.run_number }}
           draft: false
