@@ -16,7 +16,7 @@ A lightweight Electron wrapper for ChatGPT, tailored for Intel Macs that can't r
 
 **Simply download the latest release:**
 1. Go to the [Releases page](https://github.com/nininunz/gpt-electron/releases)
-1. **Download** the `ChatGPT.dmg` file from the assets below
+1. **Download** the `ChatGPT.dmg` file from the assets
 2. **Open** the downloaded DMG file
 3. **Drag** ChatGPT.app to your Applications folder
 4. **Launch** from Applications or Spotlight search
