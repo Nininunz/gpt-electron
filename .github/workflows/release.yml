@@ -1,7 +1,9 @@
 name: Build and Release Electron App
 
+
 on:
-  workflow_dispatch:
+  release:
+    types: [published]
 
 jobs:
   build-and-release:
@@ -28,8 +30,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: dist/*.dmg
-          tag_name: ${{ github.run_number }}
-          name: Release ${{ github.run_number }}
           draft: false
           prerelease: false
         env:
