@@ -1,6 +1,5 @@
 name: Build and Release Electron App
 
-
 on:
   release:
     types: [published]

@@ -28,7 +28,7 @@ A lightweight Electron wrapper for ChatGPT, tailored for Intel Macs that can't r
 If you prefer to build the app yourself:
 
 #### Prerequisites
-- [Node.js](https://nodejs.org/) (v16 or later recommended)
+- [Node.js](https://nodejs.org/) (v18 or later recommended)
 - [npm](https://www.npmjs.com/) (comes with Node.js)
 
 #### Steps

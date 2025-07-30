@@ -22,13 +22,27 @@
       "icon.icns"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "electron",
+    "chatgpt",
+    "openai",
+    "desktop-app",
+    "ai",
+    "gpt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nininunz/gpt-electron.git"
+  },
+  "author": "Nininunz",
   "license": "ISC",
   "description": "Native Electron app for ChatGPT",
   "devDependencies": {
     "electron": "^37.2.4",
     "electron-packager": "^17.1.2",
-    "electron-builder": "^24.6.0"
+    "electron-builder": "^26.0.12"
+  },
+  "bugs": {
+    "url": "https://github.com/Nininunz/gpt-electron/issues"
   }
 }
