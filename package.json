@@ -5,7 +5,7 @@
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . ChatGPT --platform=darwin --arch=x64 --icon=icon.icns --overwrite --out=dist",
-    "build:mac": "electron-builder --mac --x64"
+    "build:mac": "electron-builder --mac --x64 --publish=never"
   },
   "build": {
     "appId": "com.nininunz.gpt-electron",
