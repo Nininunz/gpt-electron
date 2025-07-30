@@ -1,36 +1,36 @@
-name: Release ChatGPT.app
+name: Build and Release Electron App
 
 on:
   workflow_dispatch:
 
 jobs:
-  release:
+  build-and-release:
     runs-on: macos-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
         with:
-          name: ChatGPT-darwin-x64
-          path: ./artifact
+          node-version: '16'
 
-      - name: List artifact contents
-        run: ls -lR ./artifact
+      - name: Install dependencies
+        run: npm install
 
-      - name: Extract artifact (if zipped)
-        run: |
-          if [ -f ./artifact/ChatGPT-darwin-x64.zip ]; then
-            unzip ./artifact/ChatGPT-darwin-x64.zip -d ./artifact/
-          fi
+      - name: Build the app
+        run: npm run build
 
-      - name: List extracted contents
-        run: ls -lR ./artifact
+      - name: List build output
+        run: ls -lR dist || true
 
       - name: Upload ChatGPT.app to GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: ./artifact/ChatGPT.app/**
+          files: dist/ChatGPT-darwin-x64/ChatGPT.app/**
+          tag_name: ${{ github.run_number }}
+          name: Release ${{ github.run_number }}
+          draft: false
+          prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
