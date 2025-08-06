@@ -8,6 +8,7 @@ A lightweight Electron wrapper for ChatGPT, tailored for Intel Macs that can't r
 ### Limitations
 - Requires an OpenAI account (Google login may open in a system browser)
 - Basic wrapper, not a full-featured client
+- Links open in an in-app window instead of your default browser
 
 ### Known Issues
 - None
