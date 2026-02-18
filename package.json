@@ -1,26 +1,11 @@
 {
   "name": "gpt-electron",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build": "electron-packager . ChatGPT --platform=darwin --arch=x64 --icon=icon.icns --overwrite --out=dist",
-    "build:mac": "electron-builder --mac --x64 --publish=never"
-  },
-  "build": {
-    "appId": "com.nininunz.gpt-electron",
-    "productName": "ChatGPT",
-    "mac": {
-      "target": [
-        "dmg"
-      ],
-      "icon": "icon.icns"
-    },
-    "files": [
-      "main.js",
-      "package.json",
-      "icon.icns"
-    ]
+    "build:mac": "npm run build && ./scripts/create-dmg.sh"
   },
   "keywords": [
     "electron",
@@ -38,9 +23,8 @@
   "license": "ISC",
   "description": "Native Electron app for ChatGPT",
   "devDependencies": {
-    "electron": "^37.2.4",
-    "electron-packager": "^17.1.2",
-    "electron-builder": "^26.0.12"
+    "electron": "^40.4.1",
+    "@electron/packager": "^19.0.5"
   },
   "bugs": {
     "url": "https://github.com/Nininunz/gpt-electron/issues"
