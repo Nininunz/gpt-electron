@@ -14,7 +14,7 @@ function createWindow() {
     }
   });
 
-  win.loadURL("https://chat.openai.com/");
+  win.loadURL("https://chatgpt.com/");
 }
 
 app.whenReady().then(() => {

@@ -50,7 +50,13 @@ If you prefer to build the app yourself:
    ```
    The app bundle will be in `dist/ChatGPT-darwin-x64/ChatGPT.app`.
 
-4. **Install manually:**
+4. **(Optional) Build a DMG installer:**
+   ```bash
+   npm run build:mac
+   ```
+   The DMG file will be created at `dist/ChatGPT.dmg`.
+
+5. **Install manually:**
    ```bash
    mv dist/ChatGPT-darwin-x64/ChatGPT.app /Applications
    ```
@@ -59,3 +65,4 @@ If you prefer to build the app yourself:
 - `main.js` — Main process script for Electron
 - `package.json` — Project metadata and scripts
 - `icon.icns` — App icon (macOS)
+- `scripts/create-dmg.sh` — DMG packaging helper script
