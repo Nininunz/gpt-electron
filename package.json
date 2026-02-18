@@ -23,8 +23,8 @@
   "license": "ISC",
   "description": "Native Electron app for ChatGPT",
   "devDependencies": {
-    "electron": "^37.2.4",
-    "@electron/packager": "^18.0.0"
+    "electron": "^40.4.1",
+    "@electron/packager": "^19.0.5"
   },
   "bugs": {
     "url": "https://github.com/Nininunz/gpt-electron/issues"
